@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>cabecera,contenido,pie</title>
+<link rel="stylesheet" media="only screen and (max-width: 768px)" href="estilos.css">
+
+<style type="text/css">
+	@font-face{ font-family: dancestep; src: url("dancestep.ttf"); }
+	.bordernota{border-radius: 0;}
+	
+	p.fuenteweb{font-family:"Dancestep";
+	border:2px solid;
+	border-radius:15px;
+	box-shadow:10px 10px 10px #888;}
+	
+	h3.sombra{text-shadow:2px 2px 4px fuchsia;}
+	
+	h1.imagen{border: 5px solid transparent;
+		border-image-source: url("../../../../imagenes/FlowerPink.ico");
+		border-image-slice: 10% fill;
+		border-image-repeat: round; }
+		
+		
+	
+	.links{border-radius:999px;border:2px solid;}
+	
+</style>
+</head>
+<body>
+	<header>
+		<h1 class="imagen">TRABAJANDO NUEVOS TAGS Y ATRIBUTOS CSS</h1>
+	</header>
+	
+	<div>
+		<p>La nueva versi&oacute;n del lenguaje HTML es <mark>HTML5</mark></p>
+		<p>Usted ha obtenido la nota de 8 sobre 10:<meter class="bordernota" max="10" value="8">40%</meter></p>
+		
+		<details>
+		<summary>Haga clic para consultar todos los detalles de la oferta</summary	>
+		<p>Estos son los detalles de su oferta: </p>
+		<p>Descuento por pronto pago.</p>
+		<p>Envio a domicilio sin coste adicional</p>
+		<p>Pago en tres meses sin recargo</p>
+		</details>
+		
+		<p>Progresión del proyecto: 
+		<progress id="p" max="100" value="40">400</progress>
+		</p>
+	
+		<label>FECHA/HORA:<input type="datetime-local"></label><br>
+		<label>HORA:<input type="time" min="0" max="0" value="50"></label><br>
+		<label>RANGO<input type="number" min="0" max="100" ></label><br>
+	
+		<p class="fuenteweb">ESTO ES UNA PRUEBA DE FUENTE WEB </p> 	
+		
+		<h3 class="sombra">Esto es un texto con sombra de color fucsia usando rgb</h3>
+	</div>	
+	
+	<footer>
+		<p>
+			<a class="links" href="https://www.facebook.com" target="_blank">Facebook</a>
+			<a class="links" href="https://es.wikipedia.org/wiki/Twitter" target="_blank">Twitter</a>
+		</p>
+	</footer>
+</body>
+	<a href="../../ejercicios.html">VOLVER ←</a>
+</html>

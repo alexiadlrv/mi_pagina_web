@@ -1,0 +1,5 @@
+hr{color:blue;}
+p.titulo{text-align:center;color:blue;font-size:30pt;font-weight:bold;border-top:5px double blue;border-bottom:5px double blue;}
+img.imagen{border:2px solid blue;float:left;}
+p.texto{font-size:18pt;font-weight:bold;}
+div{overflow:auto;position:relative}	

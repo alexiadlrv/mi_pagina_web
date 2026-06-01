@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="dw_new_image_map" value="&lt;MAP name=&quot;map&quot;&gt;&#xD;      &#xD;          &lt;AREA SHAPE=&quot;poly&quot; COORDS=&quot;132,129&quot; HREF=&quot;subpaginas/bizkaia.html&quot; TARGET=&quot;_blank&quot;&gt;&#xD;          &lt;AREA SHAPE=&quot;poly&quot; COORDS=&quot;165,110&quot; HREF=&quot;subpaginas/GUIPUZKOA.html&quot; TARGET=&quot;_blank&quot;&gt;&#xD;          &lt;AREA SHAPE=&quot;poly&quot; COORDS=&quot;219,149&quot; HREF=&quot;#&quot;&gt;&#xD;        &lt;/MAP&gt;" />
+</info>

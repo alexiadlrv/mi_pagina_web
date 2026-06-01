@@ -1,0 +1,5 @@
+body{background-color:#df8fe7;color:grey;}
+h1{text-align:center;color:white;font-style:italic;font-weight:bold;text-decoration:underline;}
+div.velero{width:200;height:250;position:absolute;margin-top:90px;margin-left:100px;border:5pt;border-color:white;}
+p.texto{margin-top:150px;margin-left:50px;color:red;font-size:24pt;
+		font-weight:bold;position:absolute;background-color:transparent;width:200px;height:200px;}

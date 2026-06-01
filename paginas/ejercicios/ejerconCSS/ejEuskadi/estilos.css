@@ -1,0 +1,38 @@
+/* CSS Document */
+
+
+
+.titulo{height: 20%;}
+
+header h1{text-align: center; animation: parpadeo 1s infinite;}
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.cuerpo {
+  width:100%;
+	height:600px;
+ 	margin: 0 auto;
+  	text-align: center;
+ 	align-items: center;
+	background: purple;
+
+	
+}
+
+.cuerpo img{align-content: center; height:40%;}
+
+
+.enlaces{height:20%;text-align: center;}
+.enfasis{color:CC99FF;font-size: 3rem;}
+
+.estilos{font-size: 16px;color:lightpink;font-family: "times new Roman";}
+.enlaces  {display: flex;align-items: center;justify-content: center; }
+.enlaces ul{display: flex;padding: 0px;list-style-type: none;}
+.enlaces ul li a{text-decoration: none;}
+.enlaces li{margin:5px;background: #4280EB;padding: 15px;text-align: center;}
+
+
+

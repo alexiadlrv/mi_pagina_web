@@ -1,0 +1,717 @@
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fef3f7;
+    font-family: 'Georgia', serif;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   HEADER Y MENÚ
+   ========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: #e6769b;
+    width: 100%;
+}
+
+.logo_header img {
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff; 
+    display: inline-block;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    text-shadow: 
+        0px 0px 8px rgba(255, 255, 255, 0.9), 
+        0px 0px 20px rgba(255, 255, 255, 0.6);
+    transform: scale(1.15);
+    border-bottom: 2px solid white;
+}
+
+
+
+/* =========================================
+   SECCION IMAGEN
+   ========================================= */
+.bloqueimagen {
+    position: relative;
+    width: 100%;      
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bloqueimagen img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(40%);
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    top: 30%;
+    left: 60px;
+    max-width: 500px;
+    color: white;
+}
+
+.texto h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.Informacion {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff8fb1;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.Informacion:hover {
+    background: #e6769b;
+}
+
+
+
+/* =========================================
+   BLOQUE RESUMEN 
+   ========================================= */
+.bloqueResumen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    padding: 130px 70px;
+    background-color: #fef3f7;
+    
+}
+
+.imagen2Inicio {
+	display: flex;
+    width: 45%;
+    border: 2px solid #f9dae5;
+    border-radius: 30px;
+	position:relative;
+	overflow: hidden;
+  
+}
+
+.imagen2Inicio img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+	 transition: opacity 0.3s ease;
+}
+
+.imagen2Inicio .imagen-normal {
+    display: block;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+   object-fit: cover;
+	
+}
+.imagen2Inicio .imagen-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+   object-fit: cover;
+}
+
+.imagen2Inicio:hover .imagen-normal {
+    display: none;
+}
+
+.imagen2Inicio:hover .imagen-hover {
+    display: block;
+}
+
+.texto2Inicio {
+    width: 45%;
+    background-color:white;
+    padding: 70px;
+    border-radius: 30px;
+    border: 2px solid #f9dae5;
+   
+    
+}
+
+.texto2Inicio h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #e6769b;
+}
+
+.texto2Inicio hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.texto2Inicio p {
+    line-height: 1.6;
+    color: #444;
+}
+
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    background-color: #e6769b;
+    color: white;
+    padding: 40px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-footer h3 {
+    margin-bottom: 20px; 
+    font-size: 1.1rem;      
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.enlaces-footer {
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces-footer li a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.enlaces-footer a:hover {
+   color: #ffffff;
+    text-shadow: 
+        0px 0px 8px rgba(255, 255, 255, 0.9), 
+        0px 0px 20px rgba(255, 255, 255, 0.6);
+    transform: scale(1.15);
+    
+}
+
+
+.tercera-seccion img {
+    width: 1.4rem;
+    height: 1.4rem;
+    filter: brightness(0) invert(1); 
+	
+}
+.enlaces-footer li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+	margin-bottom: 10px;
+   
+}
+
+.enlaces-footer li:hover {
+    color: #ffffff;
+    text-shadow: 
+        0px 0px 8px rgba(255, 255, 255, 0.9), 
+        0px 0px 20px rgba(255, 255, 255, 0.6);
+    transform: scale(1.15);
+}
+
+
+.enlaces-footer li:hover img {
+    transform: scale(1.15);
+}
+
+
+/* =========================================
+   ESTILOS PARA LA SECCIÓN DE SERVICIOS
+   ========================================= */
+.servicios {
+    background-color: #fef3f7;
+    padding: 60px 5%;
+    font-family: Arial, sans-serif;
+}
+
+
+.titulo-categorias {
+    text-align: center;
+    color: #8a2b4a;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    flex-wrap: wrap;
+}
+
+
+.categoria-tarjeta {
+    flex: 1 1 180px;
+    min-width: 150px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.categoria-tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(230, 118, 155, 0.8);
+}
+
+.icono-categoria img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.imagen-mini-categoria {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.botonVermas {
+    
+    background: #d4638a;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.categoriasVermas {
+    background: white;
+    border-radius: 35px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto 40px auto;
+    border: 1px solid #f9dae5;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.lado-fotos-detalle {
+    flex: 0 0 35%;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.lado-info-detalle {
+    flex: 1;
+    min-width: 300px;
+}
+
+.lado-fotos-detalle table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.imagen-grande-servicio {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.fila-fotos-mini img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.encabezado-con-icono {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #e6769b;
+    margin-bottom: 15px;
+}
+
+.icono-grande-rosa img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.parrafo-detalle {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Servicios y precios*/
+.servicios-informacion {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.caja-precio-servicio {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+.caja-precio-servicio img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.caja-precio-servicio h4 {
+    font-size: 13px;
+    color: #8a2b4a;
+    margin-bottom: 4px;
+}
+
+.botonWasap {
+    display: block;
+    background: #d4638a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-flotante-subir {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #8a2b4a;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.boton-flotante-subir:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+/* =========================================
+  ESTILOS DE LA PAGINA EJERCICIOS
+   ========================================= */
+   
+    .galeria {
+		margin: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        flex-wrap: wrap; 
+    }
+
+  
+    .ficha {
+        width: 220px; 
+        text-align: left;
+        color: #000;
+    }
+
+    .ficha img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border: 1px solid #000;
+        background-color: white;
+    }
+
+    .ficha u {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+        font-size: 1.1em;
+    }
+
+    .ficha p {
+        font-size: 12pt;
+        margin-top: 5px;
+    }
+
+/* =========================================
+   RESPONSIVE 
+   ========================================= */
+ 	
+
+@media (max-width: 767px) {
+    header { flex-direction: column; 
+		padding:30px 20px;
+		gap:20px;
+		padding-bottom: 50px;}
+	
+    .menu ul  {  flex-direction: column;  }
+    .logo_header img { width: 120px; }
+    .menu a { font-size: 14px; }
+    
+    .bloqueimagen img { height: 300px;justify-content: center; }
+    .texto { top: 15%; left: 20px; max-width: 250px; }
+    .texto h1 { font-size: 24px; }
+    .texto p { font-size: 12px; }
+    .Informacion { padding: 8px 18px; font-size: 12px; }
+    
+     .bloqueResumen { flex-direction: column; padding: 50px 20px; gap: 30px; }
+    .imagen2Inicio { 
+        width: 100%; 
+        min-height: 280px;
+        position: relative;
+    }
+    .texto2Inicio { width: 100%; padding: 30px; }
+    .texto2Inicio h2 { font-size: 22px; }
+    
+    footer { 
+        padding: 30px 20px;
+        text-align: center;
+		
+    }
+    
+    .contenedor-footer { 
+        flex-direction: column; 
+        gap: 40px;
+        align-items: center;
+    }
+    
+    
+    .enlaces-footer ul li {
+        justify-content: center;
+		
+    }
+
+/*========PAG SERVICIOS=======*/
+ .servicios { padding: 40px 15px; }
+    .titulo-categorias { font-size: 24px; margin-bottom: 25px; }
+    
+    .categorias { 
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .categoria-tarjeta { 
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .imagen-mini-categoria { height: 120px; }
+    .botonVermas { padding: 8px 16px; font-size: 13px; }
+    
+    .categoriasVermas { flex-direction: column; padding: 30px; gap: 30px; }
+    .lado-fotos-detalle { max-width: 100%; min-width: auto; }
+    .lado-info-detalle { min-width: auto; text-align: center; }
+    
+    .servicios-informacion { gap: 15px; flex-wrap: wrap; justify-content: center; }
+    .caja-precio-servicio { min-width: 160px; }
+    
+    .encabezado-con-icono h3 { font-size: 20px; }
+    .icono-grande-rosa img { width: 40px; height: 40px; }
+    
+    .botonWasap { padding: 14px 24px; font-size: 16px; }
+    .boton-flotante-subir { width: 50px; height: 50px; font-size: 26px; bottom: 25px; right: 25px; }
+	
+	
+	
+    /*----pagina ejercicios----*/
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;          
+        margin: 20px 15px;
+        align-items: center;
+    }
+    
+    .galeria .ficha {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+   
+    .galeria .ficha img {
+        width: 100%;
+        height: 200px;      
+        object-fit: cover;   
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    header { padding: 10px 20px; }
+    .bloqueimagen img { height: 450px; }
+    .texto h1 { font-size: 36px; }
+    .bloqueResumen { padding: 80px 40px; }
+	
+/*========PAG SERVICIOS=======*/
+  .servicios { padding: 40px 15px; }
+  .titulo-categorias { font-size: 24px; margin-bottom: 25px; } 
+	.categorias { 
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .categoria-tarjeta { 
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .imagen-mini-categoria { height: 120px; }
+    .botonVermas { padding: 8px 16px; font-size: 13px; }
+    
+    .categoriasVermas { flex-direction: column;
+		padding: 30px;
+		gap: 30px; }
+    .lado-fotos-detalle { max-width: 100%;
+		min-width: auto; 
+	}
+    .lado-info-detalle { min-width: auto; 
+		text-align: center; }
+    
+    .servicios-informacion { gap: 15px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+    .caja-precio-servicio { min-width: 160px;
+	}
+    
+    .encabezado-con-icono h3 { font-size: 20px; }
+    .icono-grande-rosa img { width: 40px; 
+		height: 40px; }
+    
+    .botonWasap { padding: 14px 24px;
+		font-size: 16px; }
+    .boton-flotante-subir { width: 50px; 
+		height: 50px; 
+		font-size: 26px; 
+		bottom: 25px; 
+		right: 25px; }
+    
+	footer { 
+        padding: 30px 20px;
+        text-align: center;
+		
+    }
+    
+    .contenedor-footer { 
+        flex-direction: column; 
+        gap: 40px;
+        align-items: center;
+    }
+    	
+    
+    .enlaces-footer ul li {
+        justify-content: center;
+		
+    }
+}
+
+		
+
+@media (min-width: 1200px) and (max-width: 2500px) {
+    .contenedor-footer { max-width: 1200px; }
+    .bloqueimagen img { height: 600px; }
+    .texto h1 { font-size: 48px; }
+	
+	.categorias, .categoriasVermas { max-width: 1200px; }
+    .categoria-tarjeta { flex: 1 1 200px; }
+}
+
